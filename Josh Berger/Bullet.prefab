@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -120,8 +120,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  colors: []
-  renderer: {fileID: 0}
+  colors:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0.49019608, b: 0, a: 1}
+  - {r: 1, g: 0.78431374, b: 0, a: 1}
+  - {r: 0, g: 0.78431374, b: 0, a: 1}
+  - {r: 0, g: 0.88235295, b: 1, a: 1}
+  - {r: 0, g: 0, b: 0.8156863, a: 1}
+  - {r: 0.34509805, g: 0.17254902, b: 0.5137255, a: 1}
+  - {r: 0.9559748, g: 0.1653414, b: 0.9559748, a: 1}
+  - {r: 0.9559748, g: 1, b: 1, a: 1}
+  renderer: {fileID: 1741519724599578927}
 --- !u!54 &1319523190652897324
 Rigidbody:
   m_ObjectHideFlags: 0

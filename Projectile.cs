@@ -39,12 +39,18 @@ public class Projectile : MonoBehaviour
         else transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 
-    // make the projectile stop moving on collision
+    // collision handler
+    // destroys projectile on collision with anything other than blaster
+    // adds to score if projectile collides with target
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag != "Blaster")
         {
             collided = true;
+            Destroy(gameObject);
+            if (collision.gameObject.tag == "Target") {
+                LaunchProjectile.incScore();
+            }
         }
     }
 }
