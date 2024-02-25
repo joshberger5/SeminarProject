@@ -1,5 +1,6 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using TMPro;
 
 /// <summary>
 /// Apply forward force to instantiated prefab
@@ -14,11 +15,11 @@ public class LaunchProjectile : MonoBehaviour
     [Tooltip("The point that the project is created")]
     private Transform startPoint = null;
 
+    [SerializeField]
+    GameObject scoreKeeper = null;
+
     // keep track of the score
     public static int score = 0;
-
-    // format the GUI
-    public GUIStyle myStyle;
 
     // spawn the projectile
     public void Fire()
@@ -30,10 +31,15 @@ public class LaunchProjectile : MonoBehaviour
     public static void incScore() {
         score++;
     }
+
+    // decrease the score
+    public static void decScore() {
+        score--;
+    }
     
     // display the score
-    void OnGUI()
+    void Update()
     {
-        GUILayout.Label(score.ToString(), myStyle);
+        scoreKeeper.GetComponent<TextMeshProUGUI>().text = score.ToString();
     }
 }

@@ -51,6 +51,9 @@ public class Projectile : MonoBehaviour
             if (collision.gameObject.tag == "Target") {
                 LaunchProjectile.incScore();
             }
+            else if (collision.gameObject.tag == "Friendly") {
+                LaunchProjectile.decScore();
+            }
         }
     }
 }
