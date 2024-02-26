@@ -394,8 +394,8 @@ Transform:
   m_GameObject: {fileID: 231743535}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.3667, y: 0.6687195, z: -0.8567}
-  m_LocalScale: {x: 0.5, y: 2, z: 0.5}
+  m_LocalPosition: {x: 2.672, y: 0.2687195, z: -0.267}
+  m_LocalScale: {x: 0.5, y: 1.2, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 701760233}
@@ -1701,8 +1701,8 @@ Transform:
   m_GameObject: {fileID: 1293312611}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.6187, y: 0.6687195, z: 0.1972}
-  m_LocalScale: {x: 0.5, y: 2, z: 0.5}
+  m_LocalPosition: {x: -1.558, y: 0.2387195, z: 1.234}
+  m_LocalScale: {x: 0.5, y: 1.15, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 701760233}
@@ -2684,7 +2684,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9071706618723044247, guid: 3ab79093272b1f046a09b6bcbb1fc62a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.8553
+      value: 0.37
       objectReference: {fileID: 0}
     - target: {fileID: 9071706618723044247, guid: 3ab79093272b1f046a09b6bcbb1fc62a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2818,8 +2818,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4590768929280264354, guid: 9ace57f52a8009b4f8d94dcf1cee7197, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8478157615823965077}
   m_SourcePrefab: {fileID: 100100000, guid: 9ace57f52a8009b4f8d94dcf1cee7197, type: 3}
+--- !u!1 &8478157615823965076 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4590768929280264354, guid: 9ace57f52a8009b4f8d94dcf1cee7197, type: 3}
+  m_PrefabInstance: {fileID: 8478157615823965075}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8478157615823965077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8478157615823965076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9327f7b584761684e974d63b2fef57dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 513477815}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
